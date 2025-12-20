@@ -1,3 +1,4 @@
+/*
 Table: Products
 
 +-------------+---------+
@@ -37,4 +38,9 @@ Output:
 | 1           |
 | 3           |
 +-------------+
-Explanation: Only products 1 and 3 are both low fat and recyclable.
+Explanation: Only products 1 and 3 are both low fat and recyclable. */
+
+SELECT
+    product_id
+    FROM products
+    WHERE low_fats = 'Y' AND recyclable = 'Y';
